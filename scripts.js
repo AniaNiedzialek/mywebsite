@@ -1,4 +1,4 @@
-const phrases = ["Welcome to my website!"];
+const phrases = ["Welcome to my website!     "];
 
 let currentPhrase = 0;
 let currentChar = 0;
