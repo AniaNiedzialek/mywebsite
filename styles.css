@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(230, 222, 186);
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    }
+.main-wrapper{
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: darkblue;
+
+   
+    }
+
+h2 {
+    color: rgb(16, 26, 92);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    color: green;
+    font-weight: 4000;
+    font-size: medium;
+}
+
+/* Navbar styles */
+.navbar {
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  nav{
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.selfie{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects{
+    padding: 40px 60px;
+    max-width: 1000px;
+    margin: auto;
+  
+}
+
+.dark-mode{
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode h1, .dark-mode p, .dark-mode a {
+  color: #e0e0e0;
+}
+.dark-mode h2 {
+  color: #79f4cd;
+}
+.dark-mode h3{
+  color: rgb(155, 178, 241)
+}
+
+.dark-mode .navbar {
+  background: #222;
+}
+
+.dark-mode .navbar a {
+  color: #e0e0e0;
+}
+
+#typing-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1; }
+  50% {opacity: 0; }
+}
