@@ -14,46 +14,46 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section>
-        <div class="projects">
+    <section class="projects">
         <h2>My Projects</h2>
         <p>Below I listed some of my projects. Feel free to check them out!</p>
-        
-            <h3>Motion Ai</h3>
-            <p>A simple moiton ai project built with OpenCV</p>
-            <a href="https://github.com/AniaNiedzialek/motion_ai" target="_blank">View Motion Ai</a>
-        
-       
+      
+        <div class="project-card">
+          <img src="images/motionai.png" alt="Motion AI">
+          <h3>Motion AI</h3>
+          <p>A simple motion AI project built with Python and OpenCV, to track movement and provide real time feedback.</p>
+          <a href="https://github.com/AniaNiedzialek/motion_ai" target="_blank">View Motion AI</a>
+        </div>
+
+        <div class="project-card">
+            <img src="images/chatroom.png" alt="Secure Chatroom">
+            <h3>Safe Chatroom System</h3>
+            <p>This Python program is a secure chatroom with attack simulations, enhancing the importance of security. </p>
+            <a href="https://github.com/AniaNiedzialek/secure-chatroom" target="_blank">View SecureChat Room</a>
+          </div>
+
+        <div class="project-card">
+            <img src="images/cinema.png" alt="Cinema Management System Screenshot">
             <h3>Cinema Management System</h3>
-            <p>
-                The Cinema Management System is a Java application that simulates the operations of a real-world cinema. 
-                The system allows customers to view movie listings, book tickets, manage profiles, order food and drinks, and manage reservations. The project utilizes Object-Oriented Programming (OOP) principles and is designed for easy scalability and maintainability.
-            </p>
-            <a href="https://github.com/AniaNiedzialek/2024-CS151-07-Cinema_Mangement_System" target="_blank">View Cinema Management</a>
-        
-        <h3>Simple Game Project - BlackJack and Snake</h3>
-        <p>
-            The following project implements a Game Manager and two games: BlackJack and Snake, using JavaFX. 
-            Both games are implemented from scratch in OOP style to be fully playable. The manager also supports persistent storage for creating and logging in users to keep track of high scores across sessions. 
-            The following description includes an overview, Design and Rules separate for each game, Installation Instructions, Usage, and Contributions.
-        </p>
-        <a href="https://github.com/AniaNiedzialek/BlackJack_Project2_CS151" target="_blank">View Game Project</a>
-        <h3>Simple RSA Algorithm</h3>
-        <p>
-            This Python program performs RSA encryption and decryption using an interactive approach. The user is prompted to input values for two prime numbers (p and q), the public exponent (e), and the message (M) to be encrypted.
-            Based on these inputs, the program calculates the following:
-            <ul>
-                <li>n = p * q</li>
-                <li>φ(n) = (p - 1)(q - 1)</li>
-                <li>The private key d by calculating the modular inverse of e modulo φ(n)</li>
-                <li>Encrypts the message M to produce ciphertext C</li>
-                <li>Decrypts the ciphertext C to retrieve the original message M</li>
-            </ul>
-
-        </p>
-
-    </div>
+            <p>This Java OOP project simulates a real-world cinema with features like booking, food ordering, and profile management.</p>
+            <a href="https://github.com/AniaNiedzialek/2024-CS151-07-Cinema_Mangement_System" target="_blank">View Cinema Project</a>
+        </div>
+      
+        <div class="project-card">
+          <img src="images/game.png" alt="Game Management">
+          <h3>Game Manager: Blackjack & Snake</h3>
+          <p>A JavaFX project featuring user login and persistent score tracking across fully playable Blackjack and Snake games.</p>
+          <a href="https://github.com/AniaNiedzialek/BlackJack_Project2_CS151" target="_blank">View Game Project</a>
+        </div>
+      
+        <div class="project-card">
+          <img src="images/rsa.png" alt="RSA Encryption">
+          <h3>RSA Encryption Tool</h3>
+          <p>This Python program implements RSA encryption/decryption, including key generation, encryption, and modular inverse for private key recovery.</p>
+          <a href="https://github.com/AniaNiedzialek" target="_blank">View RSA Project</a>
+        </div>
     </section>
+      
     <script src="scripts.js"></script>
 
 </body>

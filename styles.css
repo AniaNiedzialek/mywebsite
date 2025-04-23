@@ -84,10 +84,57 @@ h3 {
 }
 
 .projects{
-    padding: 40px 60px;
-    max-width: 1000px;
-    margin: auto;
-  
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-card {
+  background-color: #fff8dc;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2)
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: darkblue;
+}
+
+.project-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2 ease;
+}
+
+.project-card a:hover {
+  background-color: #004a99;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  max-height: 300px;
 }
 
 .dark-mode{
@@ -102,7 +149,7 @@ h3 {
   color: #79f4cd;
 }
 .dark-mode h3{
-  color: rgb(155, 178, 241)
+  color: #9bb2f1
 }
 
 .dark-mode .navbar {
