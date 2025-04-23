@@ -72,3 +72,19 @@ function displayGreeting() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior:'smooth'});
 }
+
+function revealOnScroll() {
+    const elements = document.querySelectorAll('.project-card, .about-photo, .about-content');  // ✅ FIXED
+  
+    const windowHeight = window.innerHeight;
+  
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < windowHeight - 100) {
+        el.classList.add('visible');
+      } else {
+        el.classList.remove('visible');
+      }
+    });
+  }
+  
