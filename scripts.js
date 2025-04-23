@@ -74,7 +74,10 @@ function scrollToTop() {
 }
 
 function revealOnScroll() {
-    const elements = document.querySelectorAll('.project-card, .about-photo, .about-content');  // ✅ FIXED
+    const elements = document.querySelectorAll(
+        '.project-card, .about-photo, .about-content, .skills i, .custom-skill'
+      );
+      
   
     const windowHeight = window.innerHeight;
   
@@ -87,4 +90,6 @@ function revealOnScroll() {
       }
     });
   }
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll); // <- This was missing
   

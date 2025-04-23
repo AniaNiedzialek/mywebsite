@@ -259,7 +259,11 @@ h3 {
   font-size: 32px;
   margin: 10px;
   color: #333;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease; 
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+
 }
 
 .skills i:hover {
@@ -281,7 +285,16 @@ h3 {
   margin: 8px;
   color: #333;
   transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
 }
+.skills i, .custom-skill {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
 
 .skills i:hover, .custom-skill:hover {
   transform: scale(1.15);
@@ -294,4 +307,92 @@ h3 {
   background-color: #e0e0e0;
   border-radius: 12px;
   display: inline-block;
+}
+
+.skills i.visible, .custom-skill.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wave-divider {
+  position: relative;
+  height: 80px;
+  background: linear-gradient(to right, #f3efe0, #f9f5e8);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff3f0;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.contact-section button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #004a99;
+}
+
+.about-text-box {
+  background-color: #fffdf5;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-text-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.about-text-box a {
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.about-text-box a:hover {
+  color: #003366;
+}
+
+.quote {
+  font-style: italic;
+  background-color: #fffbea;
+  padding: 20px;
+  border-left: 5px solid #b9a060;
+  margin: 20px 0;
 }
