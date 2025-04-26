@@ -572,14 +572,14 @@ h3 {
 .achievement-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #185da7;
+  color: #104884;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .achievement-card a:hover {
-  color: #003366;
+  color: #2991f9;
 }
 
 .btn-view {
@@ -597,3 +597,36 @@ h3 {
 .btn-view:hover{
   background-color: #18c1f0;
 }
+
+/* Divider */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #f9f5e8; /* match your website background */
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.wave-divider path {
+  fill: #dfc17f; /* color of the wave */
+  animation: waveAnimation 8s ease-in-out infinite alternate;
+}
+
+@keyframes waveAnimation {
+  0% {
+    d: path("M0,80 C360,0 1080,160 1440,80 L1440,320 L0,320 Z");
+  }
+  50% {
+    d: path("M0,60 C360,100 1080,0 1440,60 L1440,320 L0,320 Z");
+  }
+  100% {
+    d: path("M0,80 C360,0 1080,160 1440,80 L1440,320 L0,320 Z");
+  }
+}
+
