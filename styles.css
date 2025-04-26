@@ -94,7 +94,7 @@ h3 {
 }
 
 .project-card {
-  background-color: #fff8dc;
+  background-color: #ffffff;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
@@ -534,7 +534,7 @@ h3 {
 }
 
 .achievement-card {
-  background-color: #fff;
+  background-color: lab(100% 0.01 -0.01);
   border-radius: 12px;
   padding: 20px;
   width: 250px;
