@@ -26,16 +26,19 @@ h1 {
     }
 
 h2 {
-    color: rgb(16, 26, 92);
+  font-size: 2em;
+  color: #333;
+}
+    /* color: rgb(16, 26, 92);
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
 h3 {
   text-align: center;
-  color: rgb(82, 77, 58);
+  color: rgb(143, 103, 44);
   font-weight: 4000;
-  font-size:1.5em;
+  font-size:1.2em;
   font-weight: bold;
 }
 
@@ -207,10 +210,10 @@ h3 {
   padding: 20px;
 }
 
-.about-content h2 {
+/* .about-content h2 {
   font-size: 2em;
   color: #333;
-}
+} */
 
 .about-content p {
   line-height: 1.6;
@@ -510,3 +513,87 @@ h3 {
   box-shadow: 0 -10px 20px rgba(0,0,0,0.05);
 }
 
+/* Achievements */
+.achievement-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f9f5e8, #f3efe0);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.achievement-section {
+  margin-bottom: 50px;
+}
+
+.achievement-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.achievement-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.achievement-card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.achievement-section h2 {
+  font-size: 2em;
+  color: #333;
+}
+.achievement-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.achievement-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #185da7;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.achievement-card a:hover {
+  color: #003366;
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #185da7;
+  color:white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover{
+  background-color: #18c1f0;
+}
