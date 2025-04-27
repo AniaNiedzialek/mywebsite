@@ -5,6 +5,7 @@
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -26,14 +27,48 @@
     </section>
     
     <section class="scroll-section">
-      <h2>More About Me</h2>
-      <p>Hello and welcome! Scroll to see more!</p>
+      <section class ="about-teaser">
+        <h2>About Me</h2>
+        <p>I'm a passionate Computer Science student, dancer, ad tech enthusiast, always exploring new ideas and innovations!</p>
+        <a href="about.html" class="btn=learn-more">Learn More</a>
     </section>
     
-    
+    <section class ="testimonails">
+      <h2>Testimonials</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            "Ania is one of the most hardworking and creative people I've worked with!"
+            <br><small>-Mentor</small>
+          </div>
+            <div class="swiper-slide">
+              "Her ability to combine technology and art is outstanding!"
+              <br><small>-Professor</small>              
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <script>
+      var swiper = new Swiper(".nySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     
 
     <link rel="stylesheet" hreft="styles.css">
+    
    <script src="scripts.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>
