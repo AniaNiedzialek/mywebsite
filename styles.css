@@ -737,4 +737,13 @@ h3 {
   margin-bottom: 10px;
 }
 
+.skill-card p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
 
