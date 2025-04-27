@@ -693,3 +693,15 @@ h3 {
   color: #555;
   font-style: italic;
 }
+
+.swiper-button-next, .swiper-button-prev {
+  color:#333;
+}
+
+/* featured skills */
+.featured-skills {
+  background-color: #f3efe0;
+  padding: 80px 20px;
+  text-align: center;
+}
+
