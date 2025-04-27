@@ -678,5 +678,9 @@ h3 {
   color: #333;
 }
 
-
+.swiper {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
 
