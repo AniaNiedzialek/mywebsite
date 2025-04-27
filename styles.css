@@ -684,3 +684,12 @@ h3 {
   margin: auto;
 }
 
+.swiper-slide {
+  background-color: #f9f5e8;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+}
