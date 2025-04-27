@@ -776,4 +776,6 @@ h3 {
   transition: background-color 0.3s ease;
 }
 
-
+.btn-contact:hover {
+  background-color: #18c1f0;
+}
