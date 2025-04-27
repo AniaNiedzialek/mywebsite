@@ -731,3 +731,10 @@ h3 {
   transition: transform 0.3 ease;
 }
 
+.skill-card i {
+  font-size: 2 rem;
+  color: #185da7;
+  margin-bottom: 10px;
+}
+
+
