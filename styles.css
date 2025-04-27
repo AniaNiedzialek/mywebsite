@@ -664,5 +664,13 @@ h3 {
   background-color: #18c1f0;
 }
 
+/* testimonials */
+
+.testimonials {
+  background-color: #fffdf5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
 
 
