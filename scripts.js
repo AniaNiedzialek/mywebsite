@@ -69,9 +69,11 @@ function revealOnScroll() {
     });
   
     // CountUp numbers
-    const codingYears = new CountUp('coding-years', 6, { duration: 2 });
-    const languages = new CountUp('languages', 5, { duration: 2 });
-    const projects = new CountUp('projects', 10, { duration: 2 });
+    const codingYears = new CountUp('coding', 6);
+    const languages = new CountUp('languages', 5);
+    const projects = new CountUp('projects', 10);
+    
+    
   
     // Start the counters
     if (!codingYears.error) codingYears.start();

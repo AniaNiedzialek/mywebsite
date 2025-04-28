@@ -696,18 +696,11 @@ h3 {
 
 
 .btn-learn-more {
-  /* padding: 10px 20px;
-  background-color:  #185da7;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease; */
   display: inline-block;
   background-color: #185da7;
   color: white;
   padding: 10px 18px;
-  margin: 20px auto;
+  margin: 40px auto;
   border-radius: 8;
   text-decoration: none;
   font-weight: bold;
@@ -789,12 +782,13 @@ h3 {
   color:#941414;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 1px;
+  height: 1px;
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
-  font-size: 24px;
+  font-size: 18px;
+  color:#941414;
 }
 
 /* featured skills */
@@ -903,7 +897,6 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 40px;
-  padding-top: 100px;
 }
 
 .counter {
@@ -917,7 +910,7 @@ h3 {
 }
 
 .counter .label {
-  margin-top: 18px;
+  margin-top: 8px;
   font-size: 1rem;
   color: #555;
 }
