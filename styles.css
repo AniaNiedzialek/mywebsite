@@ -641,7 +641,7 @@ h3 {
 .about-teaser h2 {
   font-size: 2rem;
   color:#333;
-  margin-bottom: 20px;
+  margin-bottom: 200px;
 }
 
 .about-teaser p{
@@ -847,11 +847,12 @@ h3 {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 80px;
-  padding: 50px 20px;
+  padding: 60px 20px;
+  margin-left: 200px;
 }
 .intro-photo img {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   border-radius: 20px; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);

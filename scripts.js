@@ -28,46 +28,47 @@ function typeLoop(){
     setTimeout(typeLoop, speed);
 }
 
-function sayHello() {
-    alert("Hello from JavaScript!");
-}
-function ananasWord(){
-    alert("... is ananas!");
-}
+// function sayHello() {
+//     alert("Hello from JavaScript!");
+// }
+// function ananasWord(){
+//     alert("... is ananas!");
+// }
 
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    const isDark = document.body.classList.contains("dark-mode");
-    localStorage.setItem("darkMode", isDark);
+// function toggleDarkMode() {
+//     document.body.classList.toggle("dark-mode");
+//     const isDark = document.body.classList.contains("dark-mode");
+//     localStorage.setItem("darkMode", isDark);
 
-    const button = document.getElementById("darkModeBtn");
-    button.textContent = isDark ? "Light Mode" : "Dark Mode";
-}
+//     const button = document.getElementById("darkModeBtn");
+//     button.textContent = isDark ? "Light Mode" : "Dark Mode";
+// }
 
-window.onload = function () {
-    const darkModeSetting = localStorage.getItem("darkMode");
-    const button = document.getElementById("darkModeBtn");
-    if (darkModeSetting === "true") {
-        document.body.classList.add("dark-mode");
-        if(button) button.textContent  = "Light Mode";
-    } else {
-        if (button) button.textContent = "Dark Mode";
-    }
-    if (target) typeLoop();
-    };
+// window.onload = function () {
+//     const darkModeSetting = localStorage.getItem("darkMode");
+//     const button = document.getElementById("darkModeBtn");
+//     if (darkModeSetting === "true") {
+//         document.body.classList.add("dark-mode");
+//         if(button) button.textContent  = "Light Mode";
+//     } else {
+//         if (button) button.textContent = "Dark Mode";
+//     }
+//     if (target) typeLoop();
+//     };
 
-function displayGreeting() {
-    const hour = new Date().getHours();
-    let message = "Hello!";
-    if (hour < 12) {
-        message = "Good morning";
-    } else if (hour < 18) {
-        message = "Good afternoon";
-    } else {
-        message = "Good evening";
-    }
-    alert(message);
-}
+// function displayGreeting() {
+//     const hour = new Date().getHours();
+//     let message = "Hello!";
+//     if (hour < 12) {
+//         message = "Good morning";
+//     } else if (hour < 18) {
+//         message = "Good afternoon";
+//     } else {
+//         message = "Good evening";
+//     }
+//     alert(message);
+// }
+
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior:'smooth'});
