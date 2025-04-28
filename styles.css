@@ -837,10 +837,10 @@ h3 {
 /* photo intro */
 .intro-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 80px;
   padding: 50px 20px;
 }
 .intro-photo img {
