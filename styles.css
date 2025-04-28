@@ -93,6 +93,11 @@ h3 {
     text-align: center;
 }
 
+.projects p {
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
 .project-card {
   background-color: #ffffff;
   padding: 20px;
