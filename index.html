@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"/>
 
 
 </head>
@@ -69,20 +68,20 @@
           </ul>
         </div>
         <div class="counters-section">
-          
           <div class="counter">
-            <div class="number" id="coding-years"></div>
+            <div class="number" id="coding-years">0</div>
             <div class="label">Years Coding</div>
           </div>
           <div class="counter">
-            <div class="number" id="languages"></div>
+            <div class="number" id="languages">0</div>
             <div class="label">Programming Languages</div>
           </div>
           <div class="counter">
-            <div class="number" id="projects"></div>
+            <div class="number" id="projects">0</div>
             <div class="label">Projects Completed</div>
           </div>
         </div>
+        
       </div>
       </div>
 
@@ -151,36 +150,12 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>    
    <script src="scripts.js"></script> -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
 
-<script>
-  window.addEventListener('load', function() {
-    // Initialize Swiper
-    new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
 
-    // Initialize CountUp
-    const codingYears = new CountUp('coding-years', 6, { duration: 2 });
-    const languages = new CountUp('languages', 5, { duration: 2 });
-    const projects = new CountUp('projects', 10, { duration: 2 });
 
-    if (!codingYears.error) codingYears.start();
-    if (!languages.error) languages.start();
-    if (!projects.error) projects.start();
-  });
-</script>
-
-<script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
 

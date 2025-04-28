@@ -51,32 +51,32 @@ function revealOnScroll() {
   }
   window.addEventListener('load', function() {
     revealOnScroll();
+  
+    // Typing animation
     if (target) typeLoop();
+  
+    // Swiper animation
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
+    // CountUp numbers
+    const codingYears = new CountUp('coding-years', 6, { duration: 2 });
+    const languages = new CountUp('languages', 5, { duration: 2 });
+    const projects = new CountUp('projects', 10, { duration: 2 });
+  
+    // Start the counters
+    if (!codingYears.error) codingYears.start();
+    if (!languages.error) languages.start();
+    if (!projects.error) projects.start();
   });
+  
   window.addEventListener('scroll', revealOnScroll);
-
-// window.addEventListener('load', function(){
-//   revealOnScroll();
-//   if (target) typeLoop();
-
-//   //  Swiper
-//   var swiper = new Swiper(".mySwiper", {
-//     loop: true,
-//     autoplay: {
-//       delay: 4000,
-//       disableOnInteraction: false,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
-
-//   const codingYears = new CountUp('coding-years', 6, {duration: 2, startVal: 0});
-//   const languages = new CountUp('languages', 5, {duration: 2, startVal: 0});
-//   const projects = new CountUp('projects', 10, {duration: 2, startVal: 0});
-
-//   if (!codingYears.error) codingYears.start();
-//   if (!languages.error) languages.start();
-//   if (!projects.error) projects.start();
-// });
