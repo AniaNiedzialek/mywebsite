@@ -707,7 +707,8 @@ h3 {
 
 .mySwiper {
   width: 90%;
-  max-width: 1500px;
+  max-width: 1200px;
+  height: 300px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
