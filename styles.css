@@ -700,14 +700,14 @@ h3 {
 
 .testimonial-author {
   font-size: 1rem;
+  font-style: italic;
   color: #868585;
-  font-style: normal;
   margin-top: 0;
 }
 
 .mySwiper {
   width: 90%;
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
