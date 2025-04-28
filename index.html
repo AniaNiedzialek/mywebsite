@@ -33,28 +33,32 @@
         <a href="about.html" class="btn=learn-more">Learn More</a>
     </section>
     
-    <section class ="testimonails">
+    <section class="testimonials">
       <h2>Testimonials</h2>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            "Ania is one of the most hardworking and creative people I've worked with!"
-            <br><small>-Mentor</small>
+            <p class="testimonial-text">"Her ability to combine technology and art is outstanding!"</p><br>
+            <p class="testimonial-author">- Professor</p>
           </div>
-            <div class="swiper-slide">
-              "Her ability to combine technology and art is outstanding!"
-              <br><small>-Professor</small>              
-            </div>
+          
+         
+          <div class="swiper-slide">
+            "Testing"
+            <br><small>-Me</small>              
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Navigation arrows outside -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
+    
 
     <section class="featured-skills">
       <h2>Featured Skills</h2>
-      <div clas="skills-grid">
-        <div class="skills-card">
+      <div class="skill-grid">
+        <div class="skill-card">
           <i class="fas fa-code"></i>
           <p>Programming</p>
         </div>
@@ -74,9 +78,10 @@
       <p>If you would like to work together with me, let's connect and create something amazing!</p>
       <a href="contact.html" class="btn-contact">Contact Me</a>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".nySwiper", {
+      var swiper = new Swiper(".mySwiper", {
         loop: true,
         autoplay: {
           delay: 4000,
@@ -90,9 +95,8 @@
     </script>
     
 
-    <link rel="stylesheet" hreft="styles.css">
+    <link rel="stylesheet" href="styles.css">
     
    <script src="scripts.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>
