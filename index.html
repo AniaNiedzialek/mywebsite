@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"/>
+
 
 </head>
 <body>
@@ -32,16 +34,56 @@
           <div class="intro-photo">
               <img src="images/me.jpg" alt="Ania's Photo">   
               </div>
-              <div class="about-text">
+      <div class="about-text">
+        
         <h2>Who am I?</h2>
-        <p>Hi and welcome!<br><br>
-          My name is Ania and I'm a passionate Computer Science student, dancer, and tech enthusiast.<br>
-          <br>
-          Fun fact: I speak 4 languages fluently: English, Polish, Spanish and Russian.
-
-        </p>
-        <a href="about.html" class="btn=learn-more">Learn More</a>
+        <p>I'm a passionate Computer Science student, dancer, and tech enthusiast! Scroll down to learn more about me!</p>
+        <a href="about.html" class="btn-learn-more">Learn More</a>
+        <div class="fun-facts">
+          <h3>Fun Facts:</h3>
+          <ul class="fun-facts-list">
+            <li>
+              <span class="icon-circle">✔️</span>
+              CS Student at SJSU
+            </li>
+            <li>
+              <span class="icon-circle">✔️</span>
+              Based in California, Bay Area
+            </li>
+            <li>
+              <span class="icon-circle">✔️</span>
+              International Dance Competitor
+            </li>
+            <li>
+              <span class="icon-circle">✔️</span>
+              Favorite Tech: Python, JavaScript
+            </li>
+            <li>
+              <span class="icon-circle">✔️</span>
+              Loves traveling & exploring cultures
+            </li>
+            <li>
+              <span class="icon-circle">✔️</span>
+              Speak English, Polish, Spanish, Russian
+            </li>
+          </ul>
         </div>
+        <div class="counters-section">
+          
+          <div class="counter">
+            <div class="number" id="coding-years"></div>
+            <div class="label">Years Coding</div>
+          </div>
+          <div class="counter">
+            <div class="number" id="languages"></div>
+            <div class="label">Programming Languages</div>
+          </div>
+          <div class="counter">
+            <div class="number" id="projects"></div>
+            <div class="label">Projects Completed</div>
+          </div>
+        </div>
+      </div>
       </div>
 
     </section>
@@ -104,25 +146,44 @@
       <p>If you would like to work together with me, let's connect and create something amazing!</p>
       <a href="contact.html" class="btn-contact">Contact Me</a>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    
 
-    <link rel="stylesheet" href="styles.css">
-    
-   <script src="scripts.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>    
+   <script src="scripts.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+
+<script>
+  window.addEventListener('load', function() {
+    // Initialize Swiper
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // Initialize CountUp
+    const codingYears = new CountUp('coding-years', 6, { duration: 2 });
+    const languages = new CountUp('languages', 5, { duration: 2 });
+    const projects = new CountUp('projects', 10, { duration: 2 });
+
+    if (!codingYears.error) codingYears.start();
+    if (!languages.error) languages.start();
+    if (!projects.error) projects.start();
+  });
+</script>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+
+
 </body>
 </html>

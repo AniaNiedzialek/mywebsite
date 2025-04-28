@@ -28,48 +28,6 @@ function typeLoop(){
     setTimeout(typeLoop, speed);
 }
 
-// function sayHello() {
-//     alert("Hello from JavaScript!");
-// }
-// function ananasWord(){
-//     alert("... is ananas!");
-// }
-
-// function toggleDarkMode() {
-//     document.body.classList.toggle("dark-mode");
-//     const isDark = document.body.classList.contains("dark-mode");
-//     localStorage.setItem("darkMode", isDark);
-
-//     const button = document.getElementById("darkModeBtn");
-//     button.textContent = isDark ? "Light Mode" : "Dark Mode";
-// }
-
-// window.onload = function () {
-//     const darkModeSetting = localStorage.getItem("darkMode");
-//     const button = document.getElementById("darkModeBtn");
-//     if (darkModeSetting === "true") {
-//         document.body.classList.add("dark-mode");
-//         if(button) button.textContent  = "Light Mode";
-//     } else {
-//         if (button) button.textContent = "Dark Mode";
-//     }
-//     if (target) typeLoop();
-//     };
-
-// function displayGreeting() {
-//     const hour = new Date().getHours();
-//     let message = "Hello!";
-//     if (hour < 12) {
-//         message = "Good morning";
-//     } else if (hour < 18) {
-//         message = "Good afternoon";
-//     } else {
-//         message = "Good evening";
-//     }
-//     alert(message);
-// }
-
-
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior:'smooth'});
 }
@@ -91,6 +49,34 @@ function revealOnScroll() {
       }
     });
   }
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll); // <- This was missing
-  
+  window.addEventListener('load', function() {
+    revealOnScroll();
+    if (target) typeLoop();
+  });
+  window.addEventListener('scroll', revealOnScroll);
+
+// window.addEventListener('load', function(){
+//   revealOnScroll();
+//   if (target) typeLoop();
+
+//   //  Swiper
+//   var swiper = new Swiper(".mySwiper", {
+//     loop: true,
+//     autoplay: {
+//       delay: 4000,
+//       disableOnInteraction: false,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
+
+//   const codingYears = new CountUp('coding-years', 6, {duration: 2, startVal: 0});
+//   const languages = new CountUp('languages', 5, {duration: 2, startVal: 0});
+//   const projects = new CountUp('projects', 10, {duration: 2, startVal: 0});
+
+//   if (!codingYears.error) codingYears.start();
+//   if (!languages.error) languages.start();
+//   if (!projects.error) projects.start();
+// });
