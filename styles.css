@@ -707,13 +707,13 @@ h3 {
 
 .mySwiper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   height: 300px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
-.swiper{
+.swiper {
   width: 100%;
   position: relative;
 }
@@ -832,4 +832,22 @@ h3 {
 
 .btn-contact:hover {
   background-color: #18c1f0;
+}
+
+/* photo intro */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+}
+.intro-photo img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: left;
 }
