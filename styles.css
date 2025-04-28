@@ -650,6 +650,12 @@ h3 {
   margin-bottom: 30px;
 }
 
+.about-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+
 .btn-learn-more {
   /* padding: 10px 20px;
   background-color:  #185da7;
