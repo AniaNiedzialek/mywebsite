@@ -84,59 +84,35 @@ function revealOnScroll() {
   window.addEventListener('scroll', revealOnScroll);
 
 
-  ddocument.getElementById("contact-form").addEventListener("submit", async function (e) {
+  document.getElementById("contact-form").addEventListener("submit", async function (e) {
     e.preventDefault();
-
+  
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
-    const statusEl = document.getElementById("form-status");
-
+    const statusElement = document.getElementById("form-status");
+  
     try {
-        const response = await fetch("http://localhost:3000/send", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, email, message })
-        });
-
-        if (response.ok) {
-            statusEl.textContent = "Message sent successfully!";
-            statusEl.style.color = "green";
-            document.getElementById("contact-form").reset();
-        } else {
-            throw new Error("Failed to send");
-        }
-    } catch (err) {
-        statusEl.textContent = "Error sending message. Please try again later.";
-        statusEl.style.color = "red";
-    }
-});
-
-
-document.getElementById("contact-form").addEventListener("submit", async function (e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const statusEl = document.getElementById("form-status");
-
-  try {
       const response = await fetch("http://localhost:3000/send", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, message })
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, email, message })
       });
-
+  
       if (response.ok) {
-          statusEl.textContent = "Message sent successfully!";
-          statusEl.style.color = "green";
-          document.getElementById("contact-form").reset();
+        statusElement.textContent = "Message sent successfully!";
+        statusElement.style.color = "green";
+        document.getElementById("contact-form").reset();
       } else {
-          throw new Error("Failed to send");
+        statusElement.textContent = "Error sending message. Please try again.";
+        statusElement.style.color = "red";
       }
-  } catch (err) {
-      statusEl.textContent = "Error sending message. Please try again later.";
-      statusEl.style.color = "red";
-  }
-});
+    } catch (error) {
+      statusElement.textContent = "An error occurred. Try again later.";
+      statusElement.style.color = "red";
+      console.error("Error:", error);
+    }
+  });
+  
