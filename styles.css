@@ -344,12 +344,17 @@ h3 {
 }
 
 .contact-section {
-  padding: 50px 20px;
-  max-width: 600px;
+  padding: 40px 20px;
+  width: 600px;
   margin: auto;
   background-color: #fff3f0;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+.form-status {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .contact-section h2 {
