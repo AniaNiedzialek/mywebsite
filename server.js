@@ -7,6 +7,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const path = require("path");
+
+// Serve static files from current directory
+app.use(express.static(path.join(__dirname)));
+
+// Serve index.html on root
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+
 app.post("/send", async (req, res) => {
   const { name, email, message } = req.body;
 
