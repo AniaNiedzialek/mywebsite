@@ -93,7 +93,7 @@ function revealOnScroll() {
     const statusElement = document.getElementById("form-status");
   
     try {
-      const response = await fetch("https://anianiedzialek.github.io/mywebsite/send", {
+      const response = await fetch(" https://AnnaNiedzialekPortfolio.onrender.com/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
