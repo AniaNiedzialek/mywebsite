@@ -20,7 +20,7 @@ body {
     padding: 20px;
 }
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(249, 249, 246);
 
    
     }
@@ -490,7 +490,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(193, 190, 190);
+  color: white;
 }
 .hero-overlay {
   background: rgba(53, 49, 42, 0.6);
@@ -501,16 +501,16 @@ h3 {
 }
 
 .hero-title {
-  font-size: 5em;
+  font-size: 6rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
-  color: #aaa5a5;
+  color: #e0e0e0;
 } 
 
 .scroll-section {
@@ -914,13 +914,13 @@ h3 {
 }
 
 .counter .number {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  color: #b6826b;
+  color: #817d7c;
 }
 
 .counter .label {
   margin-top: 8px;
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.5rem;
+  color: #a7664c;
 }
