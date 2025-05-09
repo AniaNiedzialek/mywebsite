@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to right, #f9f5e8, #f3efe0);
+    /* background: linear-gradient(to right, #f9f5e8, #f3efe0); */
+    background: white;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -387,7 +388,7 @@ h3 {
 }
 
 .about-text-box {
-  background-color: #fffdf5;
+  /* background-color: #fffdf5; */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -490,7 +491,7 @@ h3 {
   color: white;
 }
 .hero-overlay {
-  background: rgba(53, 49, 42, 0.6);
+  background: rgba(243, 242, 240, 0.6);
   padding: 100px;
   border-radius: 12px;
   text-align: center;
@@ -501,17 +502,19 @@ h3 {
   font-size: 6rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #011647;
 }
 
 .hero-subtitle {
   font-size: 4rem;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
-  color: #e0e0e0;
+  color: #010b2b;
 } 
 
 .scroll-section {
-  background-color: #f9f5e8;
+  /* background-color: #f9f5e8; */
+  /* background: linear-gradient(to bottom, #5d5959, #f9f8f8); */
   padding: 80px 20px;
   text-align: center;
   color: #333;
@@ -651,17 +654,17 @@ h3 {
   max-width: 400px;
   width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(242, 240, 240, 0.1);
 }
 
 .about-teaser h2 {
   font-size: 2.4rem;
-  color: #333;
+  color: #f9f5f5;
   margin-bottom: 10px;
 }
 
 .about-teaser p {
-  color: #555;
+  color: #f9f5f5;
   font-size: 1.25rem;
   margin-bottom: 30px;
 }
@@ -690,7 +693,7 @@ h3 {
 
 .fun-facts h3 {
   font-size: 1.6rem;
-  color: #c1a48c;
+  color: #8ddae4;
   margin-bottom: 10px;
   margin-top: 40px;
 }
@@ -706,13 +709,13 @@ h3 {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.1rem;
+  color: #f9f5f5;
 }
 .icon-circle {
   width: 35px;
   height: 35px;
-  background-color: #f5d7db; /* soft pink background for icons */
+  background-color: #73d9eb; /* soft pink background for icons */
   border-radius: 50%;
   display: center;
   align-items: center;
@@ -746,9 +749,10 @@ h3 {
 /* testimonials */
 
 .testimonials {
-  background-color: #fffdf5;
-  padding: 40px 20px;
+  padding: 80px 20px;
   text-align: center;
+  box-shadow: 0 -10px 20px rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
 }
 
 .testimonials h2 {
@@ -760,14 +764,14 @@ h3 {
 .testimonial-text {
   font-size: 1.2rem;
   font-style: italic;
-  color: #555;
+  color: #fffdfd;
   margin-bottom: 10px;
 }
 
 .testimonial-author {
   font-size: 1rem;
   font-style: italic;
-  color: #868585;
+  color: #d1cfcf;
   margin-top: 0;
 }
 
@@ -789,7 +793,9 @@ h3 {
   align-items: center;
 }
 .swiper-slide {
-  background-color: #f9f5e8;
+  /* background-color: #f9f5e8; */
+  /* background-color: #3f5b9d; */
+  background: linear-gradient(to top, #122757, #84b7db);
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -807,7 +813,6 @@ h3 {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color:#941414;
   top: 50%;
   transform: translateY(-50%);
   width: 1px;
@@ -816,12 +821,12 @@ h3 {
 
 .swiper-button-next::after, .swiper-button-prev::after {
   font-size: 18px;
-  color:#941414;
+  color:#a8dfee;
 }
 
 /* featured skills */
 .featured-skills {
-  background-color: #f3efe0;
+  /* background-color: #b6b6b6; */
   padding: 80px 20px;
   text-align: center;
 }
@@ -854,7 +859,7 @@ h3 {
 
 .skill-card i {
   font-size: 2 rem;
-  color: #696464;
+  color: #2f417f;
   margin-bottom: 10px;
 }
 
@@ -869,10 +874,11 @@ h3 {
 }
 
 .call-to-action {
-  background-color: #fff3f0;
+  /* background-color: #fff3f0; */
   padding: 80px 20px;
   text-align: center;
   box-shadow: 0 -10px 20px rgba(0,0,0,0.05);
+  border-radius: 40px;
 }
 
 .call-to-action h2 {
@@ -920,7 +926,7 @@ h3 {
   width: 500px;
   height: 850px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 
@@ -954,14 +960,14 @@ h3 {
 }
 
 .counter .number {
-  font-size: 3rem;
-  color: #6a2d4a;
+  font-size: 4rem;
+  color: #064673;
   font-weight: bold;
 }
 
 .counter .label {
-  margin-top: 0.5rem;
-  color: #865940;
+  margin-top: 0.9rem;
+  color: #b3afad;
 }
 /* bio */
 .bio-container {
