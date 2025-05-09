@@ -935,30 +935,27 @@ h3 {
     max-width: 100%;
     text-align: center;
   }
-
-
-/* rr */
-
 }
-
 
 .counters-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; 
   align-items: center;
-  /* gap: 2rem; */
-  margin-top: 40px;
+  gap: 1.5rem;         
+  margin-top: 10px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
 .counter {
   text-align: center;
-  flex: 1;
+  flex: 0 1 200px;
   min-width: 120px;
 }
 
 .counter .number {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #6a2d4a;
   font-weight: bold;
 }
 
