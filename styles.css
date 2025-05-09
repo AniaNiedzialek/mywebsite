@@ -639,10 +639,15 @@ h3 {
 
 /* main page */
 .about-teaser {
-  text-align: center;
-  background-color: #f9f5e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   padding: 80px 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-teaser h2 {
