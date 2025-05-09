@@ -161,7 +161,7 @@ h3 {
 
 #typing-text::after {
   content: "|";
-  animation: blink 1s infinite;
+  animation: blink 0.4s infinite;
 }
 
 @keyframes blink {
@@ -477,7 +477,7 @@ h3 {
   font-size: 4rem;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
-  color: #673d63;
+  color: #b74702;
 } 
 
 .scroll-section {
