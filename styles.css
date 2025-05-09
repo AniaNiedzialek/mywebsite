@@ -97,7 +97,7 @@ h3 {
 }
 
 .project-card {
-  background-color: #ffffff;
+  background-color: #fef0f8;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
@@ -121,7 +121,7 @@ h3 {
 
 .project-card h3 {
   margin-top: 0;
-  color: darkblue;
+  color: #a74f18;
 }
 
 .project-card p {
@@ -133,7 +133,7 @@ h3 {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #0066cc;
+  background-color: #a74f18;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -141,7 +141,7 @@ h3 {
 }
 
 .project-card a:hover {
-  background-color: #004a99;
+  background-color: #f09218;
 }
 
 .project-card img {
@@ -159,29 +159,6 @@ h3 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.dark-mode{
-  background-color: #121212;
-  color: white;
-}
-
-.dark-mode h1, .dark-mode p, .dark-mode a {
-  color: #e0e0e0;
-}
-.dark-mode h2 {
-  color: #79f4cd;
-}
-.dark-mode h3{
-  color: #9bb2f1
-}
-
-.dark-mode .navbar {
-  background: #222;
-}
-
-.dark-mode .navbar a {
-  color: #e0e0e0;
-}
-
 #typing-text::after {
   content: "|";
   animation: blink 1s infinite;
@@ -195,7 +172,7 @@ h3 {
 
 .about-wrapper {
   padding: 50px 20px;
-  background: linear-gradient(to right, #f9f5e8, #f3efe0);
+  /* background: linear-gradient(to right, #f9f5e8, #f3efe0); */
 }
 
 .about-container {
@@ -212,11 +189,6 @@ h3 {
   text-align: center;
   padding: 20px;
 }
-
-/* .about-content h2 {
-  font-size: 2em;
-  color: #333;
-} */
 
 .about-content p {
   line-height: 1.6;
@@ -256,8 +228,7 @@ h3 {
 }
 
 .about-photo, .about-content {
-  /* opacity: 0;
-  transform: translateY(40px); */
+
   transition: all 0.6s ease-out;
 }
 
@@ -283,11 +254,6 @@ h3 {
   transform: translateY(20px);
   transition: all 0.6s ease-out;
 
-}
-
-.skills i:hover {
-  transform: scale(2.2);
-  color: #007bff;
 }
 
 .skills-category {
@@ -318,13 +284,13 @@ h3 {
 
 .skills i:hover, .custom-skill:hover {
   transform: scale(1.15);
-  color: #007bff;
+  /* color: #007bff; */
 }
 
 .custom-skill {
   font-weight: bold;
   padding: 6px 12px;
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
   border-radius: 12px;
   display: inline-block;
 }
@@ -337,7 +303,7 @@ h3 {
 .wave-divider {
   position: relative;
   height: 80px;
-  background: linear-gradient(to right, #f3efe0, #f9f5e8);
+  background: linear-gradient(to right, #f3e0ee, #f3c770);
   clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
@@ -345,7 +311,8 @@ h3 {
   padding: 40px 20px;
   width: 600px;
   margin: auto;
-  background-color: #d2ccc4;
+  margin-top: 150px;
+  background-color: #faf2f8;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(171, 93, 93, 0.1);
 }
@@ -374,7 +341,7 @@ h3 {
 }
 
 .contact-section button {
-  background-color: #0066cc;
+  background-color: #a74f18;
   color: white;
   border: none;
   padding: 10px;
@@ -384,7 +351,7 @@ h3 {
 }
 
 .contact-section button:hover {
-  background-color: #004a99;
+  background-color: #f09218;
 }
 
 .about-text-box {
@@ -404,14 +371,14 @@ h3 {
 }
 
 .about-text-box a {
-  color: #0066cc;
+  color: #a71881;
   text-decoration: underline;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .about-text-box a:hover {
-  color: #003366;
+  color: #f018ec;
 }
 
 .quote {
@@ -424,7 +391,7 @@ h3 {
 
 .btn-resume {
   display: inline-block;
-  background-color: #185da7;
+  background-color: #a74f18;
   color: white;
   padding: 10px 18px;
   margin: 20px auto;
@@ -439,7 +406,7 @@ h3 {
 }
 
 .btn-resume:hover {
-  background-color: #18c1f0;
+  background-color: #f09218;
 }
 
 .skills-grid {
@@ -454,7 +421,7 @@ h3 {
   width: 80px;
   height: 80px;
   border-radius: 12px;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   text-align: center;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
@@ -488,12 +455,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+
 }
+
 .hero-overlay {
-  background: rgba(243, 242, 240, 0.6);
+  background: rgba(227, 222, 226, 0.9);
   padding: 100px;
-  border-radius: 12px;
+  border-radius: 20px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(7, 7, 7, 0.2);
 }
@@ -502,19 +470,17 @@ h3 {
   font-size: 6rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #011647;
+  color: #000000;
 }
 
 .hero-subtitle {
   font-size: 4rem;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
-  color: #010b2b;
+  color: #673d63;
 } 
 
 .scroll-section {
-  /* background-color: #f9f5e8; */
-  /* background: linear-gradient(to bottom, #5d5959, #f9f8f8); */
   padding: 80px 20px;
   text-align: center;
   color: #333;
@@ -526,7 +492,7 @@ h3 {
 /* Achievements */
 .achievement-wrapper {
   padding: 50px 20px;
-  background: linear-gradient(to right, #f9f5e8, #f3efe0);
+  /* background: linear-gradient(to right, #f9f5e8, #f3efe0); */
   min-height: 100vh;
   text-align: center;
 }
@@ -548,7 +514,7 @@ h3 {
   border-radius: 12px;
   padding: 20px;
   width: 250px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(239, 182, 168, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -582,14 +548,14 @@ h3 {
 .achievement-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #104884;
+  color: #a74f18;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .achievement-card a:hover {
-  color: #2991f9;
+  color: #f09218;
 }
 
 .btn-view {
@@ -659,12 +625,12 @@ h3 {
 
 .about-teaser h2 {
   font-size: 2.4rem;
-  color: #f9f5f5;
+  color: #333;
   margin-bottom: 10px;
 }
 
 .about-teaser p {
-  color: #f9f5f5;
+  color: #333;
   font-size: 1.25rem;
   margin-bottom: 30px;
 }
@@ -693,7 +659,7 @@ h3 {
 
 .fun-facts h3 {
   font-size: 1.6rem;
-  color: #8ddae4;
+  color: #333;
   margin-bottom: 10px;
   margin-top: 40px;
 }
@@ -710,12 +676,12 @@ h3 {
   gap: 0.5rem;
   margin-bottom: 10px;
   font-size: 1.1rem;
-  color: #f9f5f5;
+  color: #333;
 }
 .icon-circle {
   width: 35px;
   height: 35px;
-  background-color: #73d9eb; /* soft pink background for icons */
+  background-color: #fff0fd; 
   border-radius: 50%;
   display: center;
   align-items: center;
@@ -728,7 +694,7 @@ h3 {
 
 .btn-learn-more {
   display: inline-block;
-  background-color: #185da7;
+  background-color: #a74f18;
   color: white;
   padding: 10px 18px;
   margin: 40px auto;
@@ -743,7 +709,7 @@ h3 {
 }
 
 .btn-learn-more:hover {
-  background-color: #18c1f0;
+  background-color: #f09128;
 }
 
 /* testimonials */
@@ -795,7 +761,7 @@ h3 {
 .swiper-slide {
   /* background-color: #f9f5e8; */
   /* background-color: #3f5b9d; */
-  background: linear-gradient(to top, #122757, #84b7db);
+  background: linear-gradient(to top, #511257, #e7b684);
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -821,7 +787,7 @@ h3 {
 
 .swiper-button-next::after, .swiper-button-prev::after {
   font-size: 18px;
-  color:#a8dfee;
+  color:#e6cf98;
 }
 
 /* featured skills */
@@ -845,7 +811,7 @@ h3 {
 }
 
 .skill-card {
-  background-color: #ffffff;
+  background-color: #f8f0f6;
   width: 150px;
   height: 150px;
   border-radius: 12px;
@@ -859,7 +825,7 @@ h3 {
 
 .skill-card i {
   font-size: 2 rem;
-  color: #2f417f;
+  color: #bb4730;
   margin-bottom: 10px;
 }
 
@@ -895,7 +861,7 @@ h3 {
 
 .btn-contact {
   padding: 12px 24px;
-  background-color: #186da7;
+  background-color: #a74f18;
   color: white;
   border-radius: 8px;
   text-decoration: none;
@@ -904,7 +870,7 @@ h3 {
 }
 
 .btn-contact:hover {
-  background-color: #18c1f0;
+  background-color: #f09218;
 }
 
 /* photo intro */
@@ -935,7 +901,6 @@ h3 {
     flex-direction: column;
     text-align: center;
   }
- 
 
   .intro-text {
     max-width: 100%;
@@ -961,7 +926,7 @@ h3 {
 
 .counter .number {
   font-size: 4rem;
-  color: #064673;
+  color: #aa0a5a;
   font-weight: bold;
 }
 
@@ -973,10 +938,11 @@ h3 {
 .bio-container {
   display: flex;
   min-height: 20vh;
-  background: #f9f5e7;
+  background: #fdfaf7;
   font-family: 'Segoe UI', sans-serif;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 /* Left Sidebar */
@@ -1036,13 +1002,6 @@ h3 {
   font-weight: 600;
   transition: color 0.2s ease;
 }
-/* 
-.tab:hover,
-.tab.active {
-  color: #cd7f32;
-  text-decoration: underline;
-} */
-
 
 .bio-card h3 {
   font-size: 20px;
