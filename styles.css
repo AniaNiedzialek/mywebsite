@@ -510,12 +510,18 @@ h3 {
 }
 
 .achievement-card {
-  background-color: lab(100% 0.01 -0.01);
+  /* background-color:#ffeded; */
   border-radius: 12px;
   padding: 20px;
   width: 250px;
-  box-shadow: 0 8px 20px rgba(239, 182, 168, 0.1);
-  transition: transform 0.3s ease;
+  text-box-edge: #333;
+  box-shadow: 0 8px 20px rgba(14, 14, 14, 0.1);
+  /* transition: transform 0.3s ease;
+  border-top: 5px solid linear-gradient(to right, #ff7e5f, #feb47b); /* won't work directly 
+  border-top: 5px solid transparent;*/
+  background-image: linear-gradient(to bottom, #f9e7db, #f7f6f5);
+/*  background-origin: border-box;
+  background-clip: content-box, border-box; */
 }
 
 .achievement-card:hover {
