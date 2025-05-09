@@ -650,6 +650,13 @@ h3 {
   margin: 0 auto;
 }
 
+.about-section img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
 .about-teaser h2 {
   font-size: 2rem;
   color:#333;
@@ -662,9 +669,14 @@ h3 {
   margin-bottom: 30px;
 }
 
-.about-text {
+/* .about-text {
   max-width: 700px;
   text-align: center;
+} */
+.about-text {
+  max-width: 600px;
+  flex: 1;
+  text-align: left;
 }
 
 .fun-facts {
@@ -888,22 +900,25 @@ h3 {
 /* photo intro */
 .intro-container {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-  /* padding: 60px 20px; */
-  margin-left: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  gap: 2rem;
+  box-sizing: border-box;
 }
+
+/* Photo column */
 .intro-photo img {
-  max-width: 100%;
-  width: 450px;
-  height: 700px;
-  object-fit: cover;
-  border-radius: 20px; 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  align-items: left; 
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 @media (max-width: 768px) {
   .intro-container {
@@ -913,33 +928,34 @@ h3 {
 
   .intro-text {
     max-width: 100%;
+    text-align: center;
   }
-}
+
 
 /* counter */
 
-.counters-section {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  .counters-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+
 .counter {
+  flex: 1;
+  min-width: 100px;
   text-align: center;
 }
 
-.counter .number {
-  font-size: 3.5rem;
+.number {
+  font-size: 2rem;
   font-weight: bold;
-  color: #817d7c;
 }
 
-.counter .label {
-  margin-top: 8px;
-  font-size: 1.5rem;
-  color: #a7664c;
+.label {
+  color: #865940;
+  margin-top: 0.5rem;
 }
-
 /* bio */
 .bio-container {
   display: flex;
