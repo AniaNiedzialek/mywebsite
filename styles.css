@@ -940,7 +940,9 @@ h3 {
 .bio-container {
   display: flex;
   min-height: 20vh;
-  background: #fdfaf7;
+  background: linear-gradient(to right, #f9cc9f, #fce7fa);
+
+  /* background: #f6dcc2; */
   font-family: 'Segoe UI', sans-serif;
   padding: 20px;
   box-sizing: border-box;
