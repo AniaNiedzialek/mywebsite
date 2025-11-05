@@ -466,23 +466,8 @@ h3 {
   justify-content: center;
 
 }
-/* 
-.hero-overlay {
-  background: rgba(227, 222, 226, 0.9);
-  padding: 40px;
-  border-radius: 20px;
-  width: 950px;        
-  height: 140px; 
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(7, 7, 7, 0.2);
-} */
 
-.hero-title{
-  font-size: 4rem;
-  font-weight: 700;
-  color: #000;
-  margin: 0;
-}
+
 .typing-row{
   height: 64px;              /* adjust to match subtitle line-height */
   display: flex;
@@ -491,12 +476,22 @@ h3 {
   overflow: hidden;
 }
 
-.hero-subtitle{
-  font-size: 3rem;
-  font-style: italic;
-  color: #b74702;
-  white-space: nowrap;       
+.hero-title {
+  font-family: 'Schoolbell', cursive;
+  font-size: 6rem;
+  color: #8f603d;
+  margin: 0;
+  letter-spacing: 2px;
 }
+
+.hero-subtitle {
+  font-family: 'Schoolbell', cursive;
+  font-size: 3rem;
+  color: #b74702;
+  white-space: nowrap;
+  letter-spacing: 1.5px;
+}
+
 
 .scroll-section {
   padding: 80px 20px;
