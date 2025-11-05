@@ -1,0 +1,256 @@
+/* ====== HOME (index) ====== */
+
+/* Hero with your waves.png background */
+.hero-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/waves.png'); /* keep your existing image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay{
+  text-align: center;
+  padding: 24px;
+}
+
+.hero-title{
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: var(--brand-brown);
+  font-size: clamp(2.8rem, 6vw, 6rem);
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.typing-row{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-subtitle{
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: clamp(1.4rem, 3vw, 3rem);
+  color: var(--brand-orange);
+  white-space: nowrap;
+  letter-spacing: 1.5px;
+}
+
+/* Highlights row */
+.highlights{
+  padding: 60px 0 20px;
+}
+
+.highlights-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.highlight-card{
+  background: #fff;
+  box-shadow: var(--shadow);
+  border-radius: 14px;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.highlight-card i{
+  color: var(--brand-brown);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.highlight-card h3{
+  margin: 6px 0 4px;
+  color: var(--brand-brown);
+}
+
+.highlight-card p{
+  margin: 6px 0 10px;
+}
+
+/* Featured cards (project + internship) */
+.featured{
+  margin: 34px auto;
+  padding: 0 20px;
+  max-width: 1100px;
+}
+
+.featured-card{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.featured-card img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.featured-body{
+  padding: 22px;
+}
+
+.featured-body h2{
+  margin: 0 0 8px;
+  color: var(--brand-brown);
+}
+
+.actions{
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Featured skills grid */
+.featured-skills{
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+.skill-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.skill-card{
+  width: 150px;
+  height: 150px;
+  background: #f3e7d9;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card i{ font-size: 28px; color: #bb4730; margin-bottom: 6px; }
+.skill-card p{ margin: 0; font-weight: 800; }
+
+/* Responsive */
+@media (max-width: 1000px){
+  .highlights-grid{ grid-template-columns: 1fr; }
+  .featured-card{
+    grid-template-columns: 1fr;
+  }
+  .featured-card img{ height: 220px; }
+}
+/* =============================
+   Testimonials Section (Swiper)
+============================= */
+
+.swiper-slide{
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 40px 30px;
+  min-height: 200px;
+}
+.testimonials {
+  padding: 10px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.testimonials h2 {
+  color: rgb(143, 96, 61);
+  font-family: 'Nunito', cursive;
+  margin-bottom: 20px;
+}
+
+/* Swiper container */
+.testimonials-swiper {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Each testimonial card */
+.testimonial-card {
+  border: 2px solid rgba(176, 102, 61, 0.25); /* warm brown translucent */
+  border-radius: 28px;
+  background: linear-gradient(180deg, #fff8f6 0%, #fbeee9 100%);
+  box-shadow: 0 6px 20px rgba(176, 102, 61, 0.08);
+  padding: 40px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 200px;
+  position: relative;
+  /* box-shadow: 0 6px 18px rgba(209, 84, 22, 0.08); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Decorative opening quote */
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  color: #b0663d;
+  margin-bottom: 10px;
+  line-height: 0.5;
+}
+
+/* Blockquote text */
+.testimonial-card blockquote {
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+  color: #5f3d27;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+/* Author / figcaption */
+.testimonial-card figcaption {
+  font-family: 'Schoolbell', cursive;
+  color: #8b4211;
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-top: 5px;
+}
+
+/* Swiper controls */
+.testimonials .swiper-button-next::after,
+.testimonials .swiper-button-prev::after {
+  color: #c1530a;
+  font-size: 20px;
+  font-weight: bold;
+}
+.testimonials .swiper-pagination-bullet {
+  background: #d5a98b;
+  opacity: .4;
+}
+.testimonials .swiper-pagination-bullet-active {
+  background: #b0663d;
+  opacity: 1;
+}

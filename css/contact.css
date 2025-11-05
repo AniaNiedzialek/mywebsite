@@ -1,0 +1,104 @@
+/* ===== Contact (page-scoped) ===== */
+
+.contact-hero {
+  /* uses the same waves image from global.css’ .hero-section */
+  height: 38vh;                 /* shorter hero on contact page */
+  align-items: flex-end;
+  padding-bottom: 24px;
+}
+
+.contact-wrap {
+  margin: -32px auto 80px;      /* pull card closer to hero */
+  padding: 0 20px;
+  max-width: 1100px;
+}
+
+.contact-card {
+  background: linear-gradient(180deg, #fff8fb 0%, #f9edf0 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(176,102,61,.18);             /* warm outline */
+  box-shadow: 0 18px 40px rgba(0,0,0,.08);
+  padding: clamp(20px, 4vw, 36px);
+  max-width: 760px;
+  margin-left: auto;
+}
+
+.contact-card h2 {
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: var(--brand-brown, #5b2e0f);
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+/* Form layout */
+#contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  font-weight: 700;
+  color: #6d3d1e;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  font: 16px/1.4 'Nunito', system-ui, sans-serif;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 2px solid rgba(0,0,0,.12);
+  background: #fff;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+input::placeholder,
+textarea::placeholder { color: #b6a9a0; }
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #b0663d;
+  box-shadow: 0 0 0 4px rgba(176,102,61,.12);
+}
+
+/* Submit button */
+.btn.primary.full {
+  width: 100%;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #b0663d;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .04s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.btn.primary.full:hover { background: #9a552f; }
+.btn.primary.full:active { transform: translateY(1px); }
+
+/* Status text */
+.form-status {
+  margin-top: 8px;
+  font-weight: 700;
+  text-align: center;
+  min-height: 1.2em; /* reserves space */
+}
+
+.form-status.ok  { color: #1f7a3d; }
+.form-status.err { color: #b02a2a; }
+
+/* Hide honeypot */
+.hp { position: absolute !important; left: -9999px !important; }
+
+/* Responsive: stack center on small screens */
+@media (max-width: 900px) {
+  .contact-card { margin: 0 auto; }
+}

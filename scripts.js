@@ -1,4 +1,9 @@
-const phrases = ["Welcome to my website!     "];
+const phrases = [
+  "CS @ SJSU  ",
+  "Python • Java • C++ • JavaScript   ",
+  "AI/ML • Web • Testing • UI/UX  ",
+  "Software Engineer   ",
+];
 
 let currentPhrase = 0;
 let currentChar = 0;
@@ -56,17 +61,14 @@ function revealOnScroll() {
     if (target) typeLoop();
   
     // Swiper animation
-    new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+   new Swiper(".testimonials .mySwiper", {
+    loop: true,
+    autoHeight: true,
+    spaceBetween: 24,
+    autoplay: { delay: 5000, disableOnInteraction: false },
+    navigation: { nextEl: ".testimonials .swiper-button-next", prevEl: ".testimonials .swiper-button-prev" },
+    pagination: { el: ".testimonials .swiper-pagination", clickable: true }
+});
   
     // CountUp numbers
     const codingYears = new CountUp('coding', 6);
@@ -101,14 +103,18 @@ function revealOnScroll() {
         body: JSON.stringify({ name, email, message })
       });
   
+      // After you get a response:
       if (response.ok) {
         statusElement.textContent = "Message sent successfully!";
-        statusElement.style.color = "green";
+        statusElement.classList.remove('err');   // add
+        statusElement.classList.add('ok');       // add
         document.getElementById("contact-form").reset();
       } else {
         statusElement.textContent = "Error sending message. Please try again.";
-        statusElement.style.color = "red";
+        statusElement.classList.remove('ok');    // add
+        statusElement.classList.add('err');      // add
       }
+
     } catch (error) {
       statusElement.textContent = "An error occurred. Try again later.";
       statusElement.style.color = "red";

@@ -41,9 +41,25 @@ h3 {
 }
 
 /* Navbar styles */
+
+.navbar a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: rgb(145, 78, 10);
+  font-weight: 700; /* Nunito looks best bold in navigation */
+  font-family: 'Nunito', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ddc6b0ed;
+  border-radius: 5px;
+}
+
 .navbar {
     list-style: none;
-    background-color: #333;
+    background-color: #9e703f58;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -54,27 +70,15 @@ h3 {
   .navbar li {
     margin: 0 15px;
   }
-  
-  .navbar a {
-    display: block;
-    padding: 14px 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .navbar a:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  nav{
-    height: 60px;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
+  nav {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 
 .selfie{
     width: 200px;
@@ -161,7 +165,7 @@ h3 {
 
 #typing-text::after {
   content: "|";
-  animation: blink 0.4s infinite;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
@@ -477,15 +481,15 @@ h3 {
 }
 
 .hero-title {
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Fuzzy Bubbles', cursive;
   font-size: 6rem;
   color: #8f603d;
-  margin: 0;
+  margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
 .hero-subtitle {
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Fuzzy Bubbles', cursive;
   font-size: 3rem;
   color: #b74702;
   white-space: nowrap;
@@ -729,7 +733,7 @@ h3 {
 
 /* testimonials */
 
-.testimonials {
+/* .testimonials {
   padding: 80px 20px;
   text-align: center;
   box-shadow: 0 -10px 20px rgba(255, 255, 255, 0.05);
@@ -776,7 +780,7 @@ h3 {
 .swiper-slide {
   /* background-color: #f9f5e8; */
   /* background-color: #3f5b9d; */
-  background: linear-gradient(to top, #511257, #e7b684);
+  /* background: linear-gradient(to top, #511257, #e7b684);
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -803,7 +807,7 @@ h3 {
 .swiper-button-next::after, .swiper-button-prev::after {
   font-size: 18px;
   color:#e6cf98;
-}
+} */ 
 
 /* featured skills */
 .featured-skills {
@@ -847,7 +851,7 @@ h3 {
 .skill-card p {
   margin: 0;
   font-weight: bold;
-  color: #333;
+  color: #333333;
 }
 
 .skill-card:hover {
