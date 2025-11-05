@@ -64,7 +64,7 @@ h3 {
 }
 
 .project-card {
-  background-color: #fef0f8;
+  background-color: #895c39;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
@@ -139,7 +139,7 @@ h3 {
 
 .about-wrapper {
   padding: 50px 20px;
-  /* background: linear-gradient(to right, #f9f5e8, #f3efe0); */
+
 }
 
 .about-container {
@@ -497,8 +497,9 @@ h3 {
   width: 250px;
   text-box-edge: #333;
   box-shadow: 0 8px 20px rgba(14, 14, 14, 0.1);
-  background-image: linear-gradient(to bottom, #f9e7db, #f7f6f5);
-
+  background:
+    radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.55), transparent 60%),
+    linear-gradient(180deg, #fff1e6 0%, #fde5d5 60%, #f7d7c1 100%);
 }
 
 .achievement-card:hover {
@@ -921,7 +922,7 @@ h3 {
 .bio-container {
   display: flex;
   min-height: 20vh;
-  background: linear-gradient(to right, #f9cc9f, #fce7fa);
+  background: linear-gradient(to right, #f9cc9f, #ebe7e1);
 
   /* background: #f6dcc2; */
   font-family: 'Segoe UI', sans-serif;
