@@ -1,50 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/global.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Contact</title>
 
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Global + Page styles -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section class="hero-section">
-        <div class="hero-overlay">
-            <h1 class="hero-title">Contact me!</h1>
+
+
+  <!-- Split Card Contact -->
+  <section class="contact-wrap">
+    <div class="contact-card">
+
+      <!-- LEFT: Info + Bay Area pin -->
+      <aside class="contact-info">
+        <div class="pin-cluster">
+          <!-- Subtle “map” blob -->
+          <div class="map-blob" aria-hidden="true"></div>
+
+          <!-- Pin -->
+          <div class="map-pin" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="54" height="54">
+              <defs>
+                <linearGradient id="pinG" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ffb87a"/>
+                  <stop offset="1" stop-color="#c56a36"/>
+                </linearGradient>
+              </defs>
+              <path d="M32 4c-9.4 0-17 7.4-17 16.6 0 11.6 14.6 26.3 16.2 28.0a1.2 1.2 0 0 0 1.6 0C34.6 46.9 49 32.2 49 20.6 49 11.4 41.4 4 32 4z" fill="url(#pinG)"/>
+              <circle cx="32" cy="21" r="6.5" fill="#fff8f3"/>
+            </svg>
+          </div>
+
+          <div class="pin-text">
+            <h3>Bay Area, CA</h3>
+            <p>Usually available 9am–6pm PT</p>
+          </div>
         </div>
-        
 
-    <section class="contact-section">
-        <h2>Contact Me!</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Your name" required><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Your email" required><br>
-            
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Write something..." required></textarea><br>
-          
-            <button type="submit">Send</button>
-          </form>
-          <p id="form-status"></p>
-        
-    </section>
+        <div class="quick-links">
+          <a class="chip" href="mailto:aniedz.contact@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+          <a class="chip" href="https://www.linkedin.com/in/akniedzialek/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a class="chip" href="https://github.com/anianiedzialek" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
 
-    <!-- </section> -->
-    <script src="scripts.js"></script>
+        <p class="micro-note">
+          I usually reply within 24–48h. For time-sensitive requests, please include your timeline.
+        </p>
+      </aside>
 
+      <!-- RIGHT: Form -->
+      <div class="contact-form-panel">
+        <h2>Let’s work together</h2>
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me briefly what you need…" required></textarea>
+
+          <button class="btn-send" type="submit">
+            <span>Send</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
