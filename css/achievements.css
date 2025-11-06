@@ -1,0 +1,114 @@
+/* ============================
+   ACHIEVEMENTS PAGE
+   (uses global.css variables & utilities)
+============================ */
+
+/* space for fixed nav */
+.ach-wrapper { padding-top: 90px; }
+
+/* ===== Hero (keeps navbar light) ===== */
+.ach-hero{
+  position: relative;
+  padding: 120px 0 60px;
+  background:
+    radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.85), transparent 60%),
+    linear-gradient(180deg, #fff7ee 0%, #fdebd6 60%, #f7dfc8 100%);
+}
+.ach-title{
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 3rem;
+  color: var(--brand-brown);
+  text-align: center;
+  margin: 0 0 8px;
+}
+.ach-subtitle{
+  text-align: center;
+  margin: 0 auto 14px;
+  max-width: 720px;
+}
+.ach-hero .chips{ justify-content: center; }
+.ach-hero .chips a{
+  color: var(--chip-text); text-decoration: none;
+}
+.hero-wave{
+  position: absolute; left:0; right:0; bottom:-1px; height:40px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #ffffff 100%);
+  opacity:.4; pointer-events:none;
+}
+
+/* ===== Section Heading with line ===== */
+.ach-section{ margin: 36px 0 64px; }
+.ach-heading{
+  display: flex; align-items: center; gap: 18px;
+  color:#9a7a5f; font-weight: 900; text-transform: none;
+  letter-spacing: .4px; margin: 0 0 18px;
+  justify-content: center;
+}
+.ach-heading::before,
+.ach-heading::after{
+  content:""; flex:1; height:1px; background: #ead9c7;
+}
+.ach-heading span{
+  background:#fff; padding: 0 10px; border-radius: 6px;
+}
+
+/* ===== Grid ===== */
+.ach-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* ===== Card ===== */
+.ach-card{
+  display: flex; flex-direction: column; overflow: hidden;
+  background:
+    radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.55), transparent 60%),
+    linear-gradient(180deg, #fff1e6 0%, #fde5d5 60%, #f7d7c1 100%);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.ach-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+}
+
+/* Media with zoom */
+.ach-media{
+  position: relative; aspect-ratio: 16 / 11; overflow: hidden;
+}
+.ach-media img{
+  width: 100%; height: 100%; object-fit: cover;
+  transform: scale(1.04);
+  transition: transform .6s ease;
+}
+.ach-card:hover .ach-media img{ transform: scale(1.12); }
+
+/* Corner label */
+.ach-label{
+  position: absolute; top: 12px; left: 12px;
+  background: #fff; color: var(--brand-orange);
+  font-weight: 900; font-size: .75rem;
+  padding: 6px 10px; border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+/* Body */
+.ach-body{ padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+.ach-name{ margin: 2px 0 0 0; font-size: 1.02rem; color: #443024; }
+
+/* Actions */
+.ach-actions{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.ach-actions .btn{ display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; }
+.ach-actions .btn i{ font-size: 1.05rem; }
+
+/* CTA at the bottom (uses global styles) */
+.call-to-action{ padding-top: 40px; }
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .ach-title{ font-size: 2.4rem; }
+  .ach-wrapper{ padding-top: 80px; }
+}

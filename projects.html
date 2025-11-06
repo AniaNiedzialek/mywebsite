@@ -1,74 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Projects</title>
 
+  <!-- Keep only global + page CSS in this order -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
+
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO -->
+  <header class="projects-hero">
+    <div class="container-compact">
+      <h1 class="projects-title">My Projects</h1>
+      <p class="projects-subtitle">
+        A selection of things I’ve built and shipped. More on
+        <a href="https://github.com/AniaNiedzialek" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+      <ul class="chips small">
+        <li>Python</li>
+        <li>Java</li>
+        <li>OpenCV</li>
+        <li>JavaScript</li>
+        <li>JavaFX</li>
+      </ul>
+    </div>
+    <div class="hero-wave"></div>
+  </header>
 
-    <section class="projects">
-        <h2>My Projects</h2>
-        <p>Hi! Welcome to the Projects Tab!
-          Below, I listed some of my most current projects. All of my projects are available on my <a href="https://github.com/AniaNiedzialek">GitHub</a>. 
-          <br>Feel free to check it out!</p>
-      
-        <div class="project-card">
-          
-          <img src="images/motionai.png" alt="Motion AI">
-     
-          <!-- <h3><a href="projects/motion-ai.html">Read about MotionAi</a></h3> -->
-          <p>An AI-powered motion tracking application, built with Python and OpenCV, to track movement and provide real time feedback.</p>
-          <!-- <a href="https://github.com/AniaNiedzialek/motion_ai" target="_blank">View Motion AI</a> -->
-          <!-- <a href="motion-ai.html" class="b">View Motion AI</a> -->
-        </div>
+  <!-- GRID -->
+  <main class="projects-wrapper">
+    <div class="container-compact">
+      <section class="projects-grid">
+        <!-- Motion AI -->
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/motionai.png" alt="Motion AI preview">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Motion AI</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>OpenCV</li>
+              <li>Computer Vision</li>
+            </ul>
+            <p class="project-desc">
+              AI-powered motion tracking with real-time feedback using OpenCV. Designed to analyze movement and provide instant, actionable cues.
+            </p>
+            <div class="project-actions">
+              <a class="btn ghost" href="https://github.com/AniaNiedzialek/motion_ai" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+              <!-- <a class="btn primary" href="#" target="_blank" rel="noopener">Live Demo</a> -->
+            </div>
+          </div>
+        </article>
 
+        <!-- Secure Chatroom -->
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/chatroom.png" alt="Secure Chatroom preview">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Secure Chatroom</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Sockets</li>
+              <li>CLI</li>
+            </ul>
+            <p class="project-desc">
+              Multi-user terminal chat app with a central server, user-defined names, and real-time messaging built on Python sockets.
+            </p>
+            <div class="project-actions">
+              <a class="btn ghost" href="https://github.com/AniaNiedzialek/secure-chatroom" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
 
-        <div class ="project-card">
-            <img src="images/chatroom.png" alt="Secure Chatroom">
-            <!-- <h3><a href="projects/secure-chatroom.html">Read about Secure Chatroom</a></h3> -->
-            <p>A simple terminal-based chat application  that allows multiple users to communicate in real time through a server, and supports user-defined names and demonstrates socket programming in Python.</p>
-        </div>
-            <!-- <a href="https://github.com/AniaNiedzialek/secure-chatroom" target="_blank">View SecureChat Room</a> -->
-       
+        <!-- Cinema Management System -->
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/cinema.png" alt="Cinema Management System preview">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Cinema Management System</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>OOP</li>
+            </ul>
+            <p class="project-desc">
+              Real-world cinema simulation—ticket booking, food ordering, and profile management—built to practice clean OOP design in Java.
+            </p>
+            <div class="project-actions">
+              <a class="btn ghost" href="https://github.com/AniaNiedzialek/2024-CS151-07-Cinema_Mangement_System" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
 
-        <div class="project-card">
-            <img src="images/cinema.png" alt="Cinema Management System Screenshot">
-            <!-- <h3><a href="projects/cinema-system.html">Read about Cinema Management System</a></h3> -->
-            <p>This Java OOP project simulates a real-world cinema with features like booking, food ordering, and profile management.</p>
-            <!-- <a href="https://github.com/AniaNiedzialek/2024-CS151-07-Cinema_Mangement_System" target="_blank">View Cinema Project</a> -->
-        </div>
-      
-        <div class="project-card">
-          <img src="images/game.png" alt="Game Management">
-          <!-- <h3><a href="projects/game-manager.html">Read about Game Manager</a></h3> -->
-          <p>A JavaFX project featuring user login and persistent score tracking across fully playable Blackjack and Snake games.</p>
-          <!-- <a href="https://github.com/AniaNiedzialek/BlackJack_Project2_CS151" target="_blank">View Game Project</a> -->
-        </div>
-      
-        <div class="project-card">
-          <img src="images/rsa.png" alt="RSA Encryption">
-          <!-- <h3><a href="projects/encryption.html">RSA Encryption Tool</a></h3> -->
-          <p>This Python program implements RSA encryption/decryption, including key generation, encryption, and modular inverse for private key recovery.</p>
-          <!-- <a href="https://github.com/AniaNiedzialek" target="_blank">View RSA Project</a> -->
-        </div>
-    </section>
-      
-    <script src="scripts.js"></script>
+        <!-- Game Manager -->
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/game.png" alt="Game Manager preview">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Game Manager</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>JavaFX</li>
+            </ul>
+            <p class="project-desc">
+              Login system + persistent scores for fully playable Blackjack and Snake, implemented with JavaFX.
+            </p>
+            <div class="project-actions">
+              <a class="btn ghost" href="https://github.com/AniaNiedzialek/BlackJack_Project2_CS151" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
 
+        <!-- RSA -->
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/rsa.png" alt="RSA Encryption preview">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">RSA Encryption Tool</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Crypto</li>
+            </ul>
+            <p class="project-desc">
+              RSA key generation, encryption/decryption, and modular inverse—implemented from scratch to understand the math under the hood.
+            </p>
+            <div class="project-actions">
+              <a class="btn ghost" href="https://github.com/AniaNiedzialek" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
 </body>
 </html>

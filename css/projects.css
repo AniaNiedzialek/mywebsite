@@ -1,36 +1,133 @@
-/* /* ============================
-   PROJECTS PAGE STYLING
+/* ============================
+   PROJECTS PAGE
+   (uses only global.css + this file)
 ============================ */
 
-body {
-  background-image: url('../images/white.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+/* Make room for the fixed nav */
+.projects-wrapper { padding-top: 90px; }
+
+/* ===== Hero: light, wavy, keeps nav looking bright ===== */
+.projects-hero{
+  position: relative;
+  padding: 120px 0 60px;
+  background:
+    radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.85), transparent 60%),
+    linear-gradient(180deg, #fff7ee 0%, #fdebd6 60%, #f7dfc8 100%);
 }
 
-/* Optional: soft overlay for contrast */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.7);
-  z-index: -1;
+.projects-title{
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 3rem;
+  color: var(--brand-brown);
+  text-align: center;
+  margin: 0 0 8px;
 }
 
-/* Optional: style for project cards */
-.project-card {
+.projects-subtitle{
+  text-align: center;
+  margin: 0 auto 14px;
+  max-width: 720px;
+}
+
+.projects-hero .chips{
+  justify-content: center;
+}
+
+/* Decorative wave under hero */
+.hero-wave{
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 40px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #ffffff 100%);
+  opacity: .4;
+  pointer-events: none;
+}
+
+/* ===== Grid ===== */
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  margin: 26px 0 80px;
+}
+
+/* ===== Card ===== */
+.project-card{
+  display: flex;
+  flex-direction: column;
   background:
     radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.55), transparent 60%),
-    linear-gradient(180deg, #fff1e6 0%, #fde5d5 60%, #f7d7c1 100%);  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  padding: 30px;
-  max-width: 800px;
-  margin: 40px auto;
-  transition: transform 0.3s ease;
+    linear-gradient(180deg, #fff1e6 0%, #fde5d5 60%, #f7d7c1 100%);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transform: translateZ(0); /* enable GPU for smooth hover */
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-} 
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+}
+
+/* Media area with subtle parallax */
+.project-media{
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.project-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform .6s ease;
+}
+.project-card:hover .project-media img{
+  transform: scale(1.12);
+}
+
+/* Body */
+.project-body{
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-title{
+  margin: 2px 0 4px 0;
+  font-size: 1.25rem;
+  color: #443024;
+  letter-spacing: .2px;
+}
+
+.project-desc{
+  margin: 6px 0 0 0;
+  line-height: 1.65;
+  color: #4d4d4d;
+}
+
+/* Actions */
+.project-actions{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Button polish (uses global .btn + .btn.ghost colors) */
+.project-actions .btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+.project-actions .btn i{
+  font-size: 1.05rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .projects-title{ font-size: 2.4rem; }
+  .projects-wrapper{ padding-top: 80px; }
+}

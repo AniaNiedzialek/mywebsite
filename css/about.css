@@ -1,0 +1,141 @@
+/* ============================
+   ABOUT PAGE
+   (uses global.css variables & utilities)
+============================ */
+
+/* make room for fixed nav via hero; main needs less */
+.about-wrapper { padding-top: 40px; }
+
+/* ===== Hero ===== */
+.about-hero{
+  position: relative;
+  padding: 120px 0 70px;
+  background:
+    radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.85), transparent 60%),
+    linear-gradient(180deg, #fff7ee 0%, #fdebd6 60%, #f7dfc8 100%);
+}
+.hero-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+.hero-photo{
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 28px rgba(0,0,0,.12);
+}
+.about-title{
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 3rem;
+  color: var(--brand-brown);
+  margin: 6px 0 6px;
+}
+.about-tagline{
+  max-width: 780px;
+  margin: 0 auto 8px;
+}
+.hero-actions{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 6px 0 10px;
+}
+.hero-wave{
+  position: absolute; left:0; right:0; bottom:-1px; height:40px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #ffffff 100%);
+  opacity:.4; pointer-events:none;
+}
+
+/* ===== Intro card ===== */
+.about-intro .about-text-box{
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  border-radius: 14px;
+  padding: 28px;
+  margin: -10px auto 40px;
+  max-width: 900px;
+}
+.about-text-box h2{
+  margin: 0 0 10px;
+}
+
+/* ===== Quick facts ===== */
+.facts-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 10px 0 50px;
+}
+.fact{
+  background:
+    radial-gradient(100% 60% at 20% 10%, rgba(255,255,255,.55), transparent 60%),
+    linear-gradient(180deg, #fff1e6 0%, #fde5d5 60%, #f7d7c1 100%);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 18px 18px 20px;
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.fact:hover{ transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.12); }
+.fact i{ font-size: 1.4rem; color: var(--brand-orange); margin-bottom: 8px; display: inline-block; }
+.fact h4{ margin: 6px 0 4px; }
+
+/* ===== Timeline ===== */
+.timeline{ margin: 10px 0 40px; }
+.timeline h2{ text-align: center; margin-bottom: 18px; }
+
+.tl-item{
+  position: relative;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto 16px;
+}
+.tl-item::before{
+  content:"";
+  position: absolute;
+  left: 13px; top: 0; bottom: -6px;
+  width: 2px; background: #ead9c7;
+}
+.tl-dot{
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--brand-brown);
+  z-index: 1; box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+.tl-card{
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+}
+.tl-card h3{ margin: 0 0 6px; color: #443024; }
+.tl-card h4{
+  margin: 0 0 10px; color: #7b6d63; font-weight: 800;
+  font-size: .9rem; font-style: italic;
+}
+.tl-card ul{ margin: 0; padding-left: 18px; }
+.tl-card li{ margin: 6px 0; }
+
+/* ===== Skills ===== */
+.skills-section{ margin: 18px 0 60px; }
+.skills-section h2{ text-align: center; margin-bottom: 12px; }
+.skills-section h4{ text-align: center; }
+.skills-row{ margin: 14px 0; }
+.skills-row h4{ margin: 0 0 8px; color: #9a7a5f; }
+.skills-row .chips {
+  justify-content: center;
+}
+
+/* Quote (reuse global styles but ensure spacing) */
+.quote{ margin: 16px 0; }
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 900px){
+  .about-title{ font-size: 2.4rem; }
+  .hero-photo{ width: 220px; height: 220px; }
+}

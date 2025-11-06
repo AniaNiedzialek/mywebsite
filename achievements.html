@@ -1,91 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Achievements</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Achievements</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/achievements.css" />
+  <!-- keep only global + page CSS, in this order -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/achievements.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
+
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO -->
+  <header class="ach-hero">
+    <div class="container-compact">
+      <h1 class="ach-title">My Achievements</h1>
+      <p class="ach-subtitle">
+        Certificates, awards, and milestones I’m proud of.
+      </p>
+      <ul class="chips small">
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#awards">Academic Awards</a></li>
+        <li><a href="#volunteering">Volunteering</a></li>
+      </ul>
+    </div>
+    <div class="hero-wave"></div>
+  </header>
 
-    <main class="achievement-wrapper">
-        <h2>My Achievements</h2>
+  <main class="ach-wrapper">
+    <div class="container-compact">
 
-        <section class="achievement-section">
-            <h3>Certificates</h3>
-            <div class="achievement-grid">
-                <div class="achievement-card">
-                    <img src="images/certificate.png" alt="SolidEdge Certificate">
-                    <p>SolidEdge 2D/3D Modeling Certificate</p>
-                    <a href="files/solidedge.pdf" target="_blank" class="btn_view">View Certificate</a>
-                </div>
-                <!--Add more certificates here-->
-                 <div class="achievement-card">
-                    <img src="images/Google2.png" alt="Google Certificate">
-                    <p>Google Certificate: Ask Questions to Make Data-Driven Decisions </p>
-                    <a href="files/Coursera1.pdf" target="_blank" class="btn_view">View Certificate</a>
-                </div>
-                 <div class="achievement-card">
-                    <img src="images/Google1.png" alt="Google Certificate 2">
-                    <p>Google Certificate: Foundations: Data, Data, Everywhere</p>
-                    <a href="files/Certificate2.pdf" target="_blank" class="btn_view">View Certificate</a>
-                </div>
+      <!-- ===== Certificates ===== -->
+      <section id="certificates" class="ach-section">
+        <h2 class="ach-heading">
+          <span>Certificates</span>
+        </h2>
+
+        <div class="ach-grid">
+          <!-- 1 -->
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/certificate.png" alt="SolidEdge Certificate">
+              <span class="ach-label">CAD</span>
             </div>
-        </section>
-
-        <section class="achievement-section">
-            <h3>Academic Awards</h3>
-            <div class="achievement-grid">
-                <div class="achievement-card">
-                    <img src="images/presidentscholarAN.png" alt="President's Scholar Award">
-                    <p>2025 President's Scholar</p>
-                    <a href="files/Niedzialek,Ania_President-College of Science.pdf" target="_blank" class="btn_view">View Award</a>
-                </div>
-                <div class="achievement-card">
-                    <img src="images/scl.PNG" alt="Summa Cum Laude">
-                    <p>Summa Cum Laude - Highest Honors in Computer Science</p>
-                    <a href="files/transcripts.pdf" target="_blank" class="btn_view">View All Awards</a>
-                    
-
-                </div>
-                <div class="achievement-card">
-                    <img src="images/badge.png" alt="Cyber Games Hackathon">
-                    <p>NCAE Cyber Games 2025, 4th Place</p>
-                    <a href="images/ncae.png" target="_blank" class="btn_view">View Award</a>
-                </div>
-                <div class="achievement-card">
-                    <img src="images/mentorAN.png" alt="De Anza Mentor Award">
-                    <p>De Anza Mentor Award</p>
-                    <a href="files/Mentor_awardAN.pdf" target="_blank" class="btn_view">View Award</a>
-                </div>
-                <div class="achievement-card">
-                    <img src="images/svic.png" alt="SVIC">
-                    <p>SVIC 2025 Finalists</p>
-                    <!-- <a href="files/Mentor_awardAN.pdf" target="_blank" class="btn_view">View Award</a> -->
-                </div>
-                <div class="achievement-card">
-                    <img src="images/GradFair.png" alt="GradFair Volunteering Recognition">
-                    <p>Volunteering Recognition for GradFair 2025</p>
-                    <a href="files/GradFair_Ania.pdf" target="_blank" class="btn_view">View Award</a>
-                </div>
-                
-                
+            <div class="ach-body">
+              <h3 class="ach-name">SolidEdge 2D/3D Modeling Certificate</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/solidedge.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+                </a>
+              </div>
             </div>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+          </article>
+
+          <!-- 2 -->
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/Google2.png" alt="Google Certificate">
+              <span class="ach-label">Data</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">Google: Ask Questions to Make Data-Driven Decisions</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/Coursera1.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/Google1.png" alt="Google Certificate 2">
+              <span class="ach-label">Data</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">Google: Foundations — Data, Data, Everywhere</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/Certificate2.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== Academic Awards ===== -->
+      <section id="awards" class="ach-section">
+        <h2 class="ach-heading">
+          <span>Academic Awards</span>
+        </h2>
+
+        <div class="ach-grid">
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/presidentscholarAN.png" alt="President's Scholar Award">
+              <span class="ach-label">SJSU</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">2025 President's Scholar</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/Niedzialek,Ania_President-College of Science.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-file-pdf"></i> View Award
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/scl.PNG" alt="Summa Cum Laude">
+              <span class="ach-label">Honors</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">Summa Cum Laude — Highest Honors in CS</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/transcripts.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-file-pdf"></i> View Transcript
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/badge.png" alt="Cyber Games">
+              <span class="ach-label">Comp.</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">NCAE Cyber Games 2025 — 4th Place</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="images/ncae.png" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Award
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== Volunteering / Other ===== -->
+      <section id="volunteering" class="ach-section">
+        <h2 class="ach-heading">
+          <span>Volunteering & Other</span>
+        </h2>
+
+        <div class="ach-grid">
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/mentorAN.png" alt="De Anza Mentor Award">
+              <span class="ach-label">Mentor</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">De Anza Mentor Award</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/Mentor_awardAN.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-file-pdf"></i> View Award
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/svic.png" alt="SVIC Finalists">
+              <span class="ach-label">Startup</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">SVIC 2025 — Finalists</h3>
+            </div>
+          </article>
+
+          <article class="ach-card">
+            <div class="ach-media">
+              <img src="images/GradFair.png" alt="GradFair Recognition">
+              <span class="ach-label">Volunteer</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">GradFair 2025 — Volunteering Recognition</h3>
+              <div class="ach-actions">
+                <a class="btn ghost" href="files/GradFair_Ania.pdf" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-file-pdf"></i> View Award
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="call-to-action">
+        <h2>Want details or verification?</h2>
+        <p>I’m happy to share project repos, transcripts, or additional certificates on request.</p>
+        <a class="btn-contact" href="contact.html">Contact Me</a>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
