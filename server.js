@@ -12,7 +12,7 @@ const path = require("path");
 // Serve static files from current directory
 app.use(express.static(path.join(__dirname)));
 
-// Serve index.html on root
+// Serve index.html on root route
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
