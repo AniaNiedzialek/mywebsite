@@ -2,224 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anna Niedzialek</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Schoolbell&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Icons + Swiper (for testimonials) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  <!-- Styles (new split) -->
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/index.css" />
+  <meta name="description" content="Software Engineer, Bay Area. I’m curious about how things work, so I build software to find out." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anna Niedzialek" />
+  <meta property="og:description" content="Software Engineer, Bay Area. I’m curious about how things work, so I build software to find out." />
+  <meta property="og:url" content="https://anianiedzialek.github.io/mywebsite/" />
+  <meta property="og:image" content="https://anianiedzialek.github.io/mywebsite/preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23d9622b'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <main>
+    <header>
+      <h1>Anna Niedzialek<span class="cursor" aria-hidden="true"></span></h1>
+      <p class="muted">Software Engineer</p>
+      <p class="muted">Bay Area</p>
+      <p class="intro">I’m curious about how things work, so I build software to find out. Most of the time, I’m somewhere between learning, building, and experimenting.</p>
+    </header>
 
-  <!-- HERO with your waves background -->
-  <section class="hero-section">
-    <div class="hero-overlay">
-      <h1 class="hero-title">Anna Niedzialek Portfolio</h1>
-      <div class="typing-row">
-        <p id="typing-text" class="hero-subtitle"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- MAIN CONTENT -->
-  <section class="scroll-section">
-    <!-- Quick Highlights -->
-    <section class="highlights">
-      <div class="container-compact">
-        <div class="highlights-grid">
-
-          <div class="highlight-card">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h3>Current</h3>
-            <ul class="chips">
-              <li>Dean’s List</li>
-              <li>Honors</li>
-              <li>4.00 GPA</li>
-            </ul>
-            <p>CS @ SJSU • Bay Area</p>
-            
-          </div>
-
-          <div class="highlight-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>Core Stack</h3>
-            <ul class="chips">
-              <li>Python</li><li>Java</li><li>JS/TS</li><li>React</li>
-            </ul>
-            <p>AI/ML • Web • Testing/Automation</p>
-          </div>
-
-          <div class="highlight-card">
-            <i class="fa-solid fa-briefcase"></i>
-            <h3>Experience</h3>
-            <ul class="chips">
-              <li>CI/CD</li>
-              <li>Bash Scripting</li>
-              <li>Fullstack</li>
-            </ul>
-            <p>HPE (SWE) • Arthrex (Engineering)</p>
-            <a class="mini-link" href="about.html">See experience →</a>
-          </div>
-
-        </div>
-      </div>
+    <section>
+      <h2># work</h2>
+      <ul>
+        <li><span>2026</span><p>Bountiful, Software Engineer Intern</p></li>
+        <li><span>2026</span><p>SJSU Research Foundation, AI/ML Researcher</p></li>
+        <li><span>2024</span><p>HPE, Software Engineer Intern</p></li>
+        <li><span>2022</span><p>Arthrex, Engineering Intern</p></li>
+      </ul>
     </section>
 
-    <!-- Featured Project -->
-    <section class="featured">
-      <div class="featured-card">
-        <img src="images/motionai.png" alt="Motion AI preview" />
-        <div class="featured-body">
-          <h2>Motion AI</h2>
-          <p>AI-powered dance feedback using OpenCV + PyTorch. Real-time pose estimation and scoring to help improve movement technique.</p>
-          <ul class="chips small">
-            <li>Python</li><li>OpenCV</li><li>PyTorch</li><li>MediaPipe</li>
-          </ul>
-          <div class="actions">
-            <a href="projects.html" class="btn primary">Case study</a>
-            <a href="https://github.com/AniaNiedzialek" class="btn ghost">GitHub</a>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h2># education</h2>
+      <ul>
+        <li><span>2024-2026</span><p>SJSU, B.S. Computer Science</p></li>
+      </ul>
     </section>
 
-    <!-- Featured Internship -->
-    <section class="featured">
-      <div class="featured-card">
-        <img src="images/hpe.jpg" alt="HPE Internship" />
-        <div class="featured-body">
-          <h2>HPE • SWE Intern</h2>
-          <p>Automated API key validation scripts, integrated into CI. Learned GitHub Actions and collaborated on UI testing.</p>
-          <ul class="chips small"><li>Bash</li><li>Python</li><li>CI/CD</li><li>Datadog</li><li>PrestoSQL</li></ul>
-          <div class="actions">
-            <a href="about.html" class="btn primary">Highlights</a>
-            <a href="contact.html" class="btn ghost">Request resume</a>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h2># projects</h2>
+      <ul>
+        <li><span>Motion AI</span><p><a href="https://github.com/AniaNiedzialek/motion_ai" target="_blank" rel="noopener">Real time dance feedback from pose tracking.</a></p></li>
+      </ul>
     </section>
 
-    <!-- Featured Achievements -->
-     <section class="featured">
-      <div class="featured-card">
-        <img src="images/google.png" alt="HPE Internship" />
-        <div class="featured-body">
-          <h2>Google • Data Analyst Certificate</h2>
-          <p>
-            Completed the Google Data Analytics Professional Certificate, gaining hands-on experience with
-            data cleaning, visualization, and analysis using SQL, Excel, Tableau, and R.
-          </p>
-          <ul class="chips small">
-            <li>SQL</li><li>Excel</li><li>Tableau</li><li>R</li>
-          </ul>
-          <div class="actions">
-            <a href="https://coursera.org/share/6a4f5e05ca4280b8218044631f0b21dc"
-              target="_blank" class="btn primary">Verification</a>
-            <a href="achievements.html" class="btn ghost">View achievements</a>
-        </div>
-      </div>
+    <section>
+      <h2># awards</h2>
+      <ul>
+        <li><span>2026</span><p>CS Research Day, SJSU</p></li>
+        <li><span>2025</span><p>President's Scholar, SJSU</p></li>
+        <li><span>2025</span><p>NCAE Cyber Games, 4th place</p></li>
+        <li><span>2025</span><p>SVIC, finalist</p></li>
+      </ul>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-  <h2>Testimonials</h2>
-
-  <div class="swiper mySwiper testimonials-swiper">
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
-        <figure class="testimonial-card">
-          <div class="quote-mark">“</div>
-          <blockquote>
-            Anna's outstanding performance in one of the most rigorous courses in our program,
-            Data Structures and Algorithms, in which she earned an “A”, exemplifies her
-            analytical thinking and problem-solving skills.
-          </blockquote>
-          <figcaption>— Professor R. Chan</figcaption>
-        </figure>
-      </div>
-
-      <div class="swiper-slide">
-        <figure class="testimonial-card">
-          <div class="quote-mark">“</div>
-          <blockquote>
-            As Ania’s Object-Oriented Programming professor, I saw her commitment and eagerness
-            to master concepts beyond class—she consistently went the extra mile.
-          </blockquote>
-          <figcaption>— Professor T. Zhong</figcaption>
-        </figure>
-      </div>
-
-      <div class="swiper-slide">
-        <figure class="testimonial-card">
-          <div class="quote-mark">“</div>
-          <blockquote>
-            While working part-time, Anna thrived as a full-time student. Her organization and
-            drive set her apart and made her a joy to work with.
-          </blockquote>
-          <figcaption>— Supervisor C. Wheat</figcaption>
-        </figure>
-      </div>
-
-      <div class="swiper-slide">
-        <figure class="testimonial-card">
-          <div class="quote-mark">“</div>
-          <blockquote>
-            Ania’s passion and ambition are contagious—she pushes boundaries and inspires those
-            around her to explore new frontiers in CS.
-          </blockquote>
-          <figcaption>— Supervisor I. Sichkovska</figcaption>
-        </figure>
-      </div>
-
-    </div>
-
-    <!-- Navigation & pagination -->
-    <div class="swiper-button-prev tsti-btn"></div>
-    <div class="swiper-button-next tsti-btn"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-
-    <!-- Skills -->
-    <section class="featured-skills">
-      <h2>Featured Skills</h2>
-      <div class="skill-grid">
-        <div class="skill-card"><i class="fas fa-code"></i><p>Programming</p></div>
-        <div class="skill-card"><i class="fas fa-robot"></i><p>Artificial Intelligence</p></div>
-        <div class="skill-card"><i class="fas fa-laptop-code"></i><p>Web Development</p></div>
-        <div class="skill-card"><i class="fas fa-brain"></i><p>Machine Learning</p></div>
-        <div class="skill-card"><i class="fas fa-pencil-ruler"></i><p>UI/UX Design</p></div>
-      </div>
+    <section>
+      <h2># links</h2>
+      <p class="links">
+        <a href="https://github.com/AniaNiedzialek" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/akniedzialek/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
     </section>
-
-    <!-- CTA -->
-    <section class="call-to-action">
-      <h2>Let's Work Together!</h2>
-      <p>If you would like to work together with me, let's connect and create something amazing!</p>
-      <a href="contact.html" class="btn-contact">Contact Me</a>
-    </section>
-  </section>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
-  <script src="scripts.js"></script>
+  </main>
 </body>
 </html>
