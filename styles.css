@@ -1,9 +1,9 @@
 :root {
   --bg: #faf5ea;
   --ink: #2b241d;
-  --muted: #8c7f6e;
+  --muted: #6f6353;
   --line: #dfd3bd;
-  --accent: #d9622b;
+  --accent: #b4501f;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
